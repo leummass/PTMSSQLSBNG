@@ -26,20 +26,23 @@ BEGIN
 	BEGIN CATCH
 
 		IF @@TRANCOUNT > 0
-
 			ROLLBACK TRANSACTION;
-			IF ERROR_NUMBER() = 547
-			BEGIN
+			
+		IF ERROR_NUMBER() = 547
+		BEGIN
 				
-				SET @Resultado = 0;
-				SET @Mensaje = 'El registro está siendo referenciado por otra tabla'
+			SET @Resultado = 0;
+			SET @Mensaje = 'El registro está siendo referenciado por otra tabla'
 
-			END
-			ELSE
-			BEGIN
-				SET @Resultado = -1
-				SET @Mensaje = ERROR_MESSAGE();
-			END
+		END
+		ELSE
+		BEGIN
+		
+			SET @Resultado = -1
+			SET @Mensaje = ERROR_MESSAGE();
+			
+		END
+		
 	END CATCH
 
 END;
