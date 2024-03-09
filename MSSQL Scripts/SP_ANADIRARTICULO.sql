@@ -1,0 +1,9 @@
+CREATE PROC SP_ANADIRARTICULO
+	@SKU VARCHAR(20),
+	@Nombre VARCHAR(30),
+	@Cantidad INT
+AS
+BEGIN
+	INSERT INTO Inventario 
+	VALUES(@SKU, @Nombre, @Cantidad);
+END;

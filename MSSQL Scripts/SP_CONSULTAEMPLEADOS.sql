@@ -1,0 +1,5 @@
+CREATE PROC SP_CONSULTAEMPLEADOS
+AS
+BEGIN
+	SELECT IdEmpleado, Nombre, Apellido, Puesto FROM Empleado;
+END;

@@ -1,0 +1,22 @@
+CREATE TABLE Inventario(
+	SKU VARCHAR(20) PRIMARY KEY,
+	Nombre VARCHAR(30) NOT NULL,
+	Cantidad INT NOT NULL
+);
+
+CREATE TABLE Empleado(
+	IdEmpleado INT PRIMARY KEY,
+	Nombre VARCHAR(20) NOT NULL,
+	Apellido VARCHAR(20) NOT NULL,
+	Puesto VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE Polizas(
+	IdPolizas INT PRIMARY KEY,
+	EmpleadoGenero INT NOT NULL,
+	SKU VARCHAR(20) NOT NULL,
+	Cantidad INT NOT NULL,
+	Fecha DATE,
+	FOREIGN KEY (EmpleadoGenero) REFERENCES Empleado(IdEmpleado),
+	FOREIGN KEY (SKU) REFERENCES Inventario(SKU)
+);
