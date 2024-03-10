@@ -2,11 +2,11 @@ CREATE PROC SP_ANADIREMPLEADO
 	@IdEmpleado INT,
 	@Nombre VARCHAR(20),
 	@Apellido VARCHAR(20),
-	@Puesto VARCHAR(15),
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(150) OUTPUT
+	@Puesto VARCHAR(15)
 AS
 BEGIN
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	BEGIN TRY
 		BEGIN TRANSACTION;
 
@@ -41,7 +41,7 @@ BEGIN
 		END
 
 	END CATCH
-		
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
 END
 
 

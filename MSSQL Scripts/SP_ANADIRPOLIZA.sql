@@ -3,11 +3,11 @@ CREATE PROC SP_ANADIRPOLIZA
 	@EmpleadoGenero INT,
 	@SKU VARCHAR(20),
 	@Cantidad INT,
-	@Fecha DATE,
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(150) OUTPUT
+	@Fecha DATE
 AS
 BEGIN
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	BEGIN TRY
 		BEGIN TRANSACTION;
 
@@ -42,4 +42,6 @@ BEGIN
 		END
 
 	END CATCH
+	
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
 END

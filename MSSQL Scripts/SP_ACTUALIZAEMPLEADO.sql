@@ -2,12 +2,11 @@ CREATE PROC SP_ACTUALIZAEMPLEADO
 	@IdEmpleado INT,
 	@Nombre VARCHAR(20),
 	@Apellido VARCHAR(20),
-	@Puesto VARCHAR(15),
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(60) OUTPUT
+	@Puesto VARCHAR(15)
 AS
 BEGIN
-	
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	SET NOCOUNT ON;
 	BEGIN TRY
 		
@@ -21,7 +20,7 @@ BEGIN
         BEGIN
 
             SET @Resultado = 1;
-            SET @Mensaje = 'Se actualizó correctamente al empleado con ID '+ @IdEmpleado;
+            SET @Mensaje = 'Se actualizó correctamente al empleado con ID '+ CAST(@IdEmpleado AS VARCHAR(10));
 
         END
         ELSE
@@ -45,4 +44,7 @@ BEGIN
 		SET @Mensaje = ERROR_MESSAGE();
 
 	END CATCH
+
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
+
 END

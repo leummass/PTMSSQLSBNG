@@ -1,9 +1,9 @@
 CREATE PROC SP_ELIMINAREMPLEADO
-	@IdEmpleado INT,
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(60) OUTPUT
+	@IdEmpleado INT
 AS
 BEGIN
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	SET NOCOUNT ON;
 	BEGIN TRY;
 		BEGIN TRANSACTION;
@@ -44,5 +44,5 @@ BEGIN
 		END
 		
 	END CATCH
-
-END;
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
+END

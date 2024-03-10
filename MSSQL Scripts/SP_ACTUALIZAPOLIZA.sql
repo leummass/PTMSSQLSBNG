@@ -3,12 +3,11 @@ CREATE PROC SP_ACTUALIZAPOLIZA
 	@EmpleadoGenero INT,
 	@SKU VARCHAR(20),
 	@Cantidad INT,
-	@Fecha DATE,
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(60) OUTPUT
+	@Fecha DATE
 AS
 BEGIN
-	
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	BEGIN TRY
 		
 		BEGIN TRANSACTION;
@@ -83,4 +82,6 @@ BEGIN
 		SET @Mensaje = 'No se pudo actualizar la poliza ya que hubo un error: '+ERROR_MESSAGE();
 
 	END CATCH
+	
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
 END

@@ -1,12 +1,12 @@
 CREATE PROC SP_ACTUALIZAINVENTARIO
 	@SKU VARCHAR(20),
 	@Nombre VARCHAR(20),
-	@Cantidad INT,
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(60) OUTPUT
+	@Cantidad INT
 AS
 BEGIN
 	
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	SET NOCOUNT ON;
 	BEGIN TRY
 		
@@ -44,4 +44,6 @@ BEGIN
 		SET @Mensaje = ERROR_MESSAGE();
 
 	END CATCH
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
+	
 END

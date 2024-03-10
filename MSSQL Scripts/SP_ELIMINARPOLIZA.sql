@@ -1,10 +1,9 @@
 CREATE PROC SP_ELIMINARPOLIZA
-	@IdPolizas INT,
-	@Resultado INT OUTPUT,
-	@Mensaje VARCHAR(150) OUTPUT
+	@IdPolizas INT
 AS
 BEGIN
-	
+	DECLARE @Resultado INT;
+	DECLARE @Mensaje VARCHAR(200);
 	DECLARE @CantidadArticuloPoliza INT;
 	DECLARE @SKUArticuloPoliza VARCHAR(20);
 	BEGIN TRY
@@ -39,5 +38,7 @@ BEGIN
 		SET @Resultado = -1
 		SET @Mensaje = 'Error inesperado: ' + ERROR_MESSAGE();
 
-	END CATCH;
+	END CATCH
+	SELECT @Resultado AS Resultado, @Mensaje AS Mensaje;
+	
 END
