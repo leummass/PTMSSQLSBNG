@@ -1,0 +1,4 @@
+09:25:16.780 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idEmpleado=7, nombre=Arturo, apellido=Rojas, puesto=Tester)
+09:25:16.783 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 09:25:16 GMT-07:00 2024
+09:25:16.783 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado: actualizarEmpleado
+09:25:16.783 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.

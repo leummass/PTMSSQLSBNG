@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
+
 @Service
 public class EmpleadoService implements IEmpleadoService{
     @Autowired
@@ -29,5 +31,9 @@ public class EmpleadoService implements IEmpleadoService{
     @Override
     public int deleteById(int id) {
         return 0;
+    }
+    @Override
+    public Map<String, Object> actualizarEmpleadoProc(Empleado empleado){
+        return iEmpleadoRepository.actualizarEmpleado(empleado);
     }
 }
