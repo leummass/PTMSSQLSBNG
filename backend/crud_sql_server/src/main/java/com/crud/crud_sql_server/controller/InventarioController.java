@@ -66,7 +66,7 @@ public class InventarioController {
         return respuestaJSON;
     }
     @DeleteMapping("/eliminarinventario/{SKU}")
-    public RespuestaJSON eliminarArticulo(@PathVariable int SKU){
+    public RespuestaJSON eliminarArticulo(@PathVariable String SKU){
         Map<String, Object> resultado = iInventarioService.eliminarArticulo(SKU);
         List<Map<String, Object>> resultadoResultSet = (List<Map<String, Object>>) resultado.get("#result-set-1");
         Map<String, Object> resultadoTrim = resultadoResultSet.get(0);
@@ -94,7 +94,7 @@ public class InventarioController {
         return respuestaJSON;
     }
     @GetMapping("/consultainventario/{SKU}")
-    public RespuestaJSON consultaInventarioXSKU(@PathVariable int SKU){
+    public RespuestaJSON consultaInventarioXSKU(@PathVariable String SKU){
         Map<String, Object> resultado = iInventarioService.consultaInventarioXSKU(SKU);
         List<Map<String, Object>> resultadoResultSet = (List<Map<String, Object>>) resultado.get("#result-set-1");
         RespuestaJSON respuestaJSON = new RespuestaJSON();

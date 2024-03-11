@@ -20,11 +20,11 @@ public class InventarioService implements IInventarioService{
         return iInventarioRepository.actualizarInventario(inventario);
     }
     @Override
-    public Map<String, Object> eliminarArticulo(int SKU){
+    public Map<String, Object> eliminarArticulo(String SKU){
         return iInventarioRepository.eliminarArticulo(SKU);
     }
     @Override
-    public Map<String, Object> consultaInventarioXSKU(int SKU){
+    public Map<String, Object> consultaInventarioXSKU(String SKU){
         return iInventarioRepository.consultaInventarioXSKU(SKU);
     }
     @Override

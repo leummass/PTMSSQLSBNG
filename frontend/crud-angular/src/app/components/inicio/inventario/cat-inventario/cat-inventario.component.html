@@ -1,0 +1,70 @@
+<div class="container">
+    <mat-toolbar>
+      <span class="spacer">Catálogo de inventario</span>
+    </mat-toolbar>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Filtros </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        <form [formGroup]="form">
+          <mat-form-field class="filtro">
+            <mat-label>SKU</mat-label>
+            <input matInput formControlName="fSKU" />
+          </mat-form-field>
+          <mat-form-field class="filtro">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="fNombre"  />
+          </mat-form-field>
+        </form>
+      </mat-panel-description>
+    </mat-expansion-panel>
+  
+    <div class="contenedor_tabla mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" class="tabla">
+        <ng-container matColumnDef="SKU">
+          <th mat-header-cell *matHeaderCellDef>SKU</th>
+          <td mat-cell *matCellDef="let element">{{ element.sku }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Nombre">
+          <th mat-header-cell *matHeaderCellDef>Nombre</th>
+          <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Cantidad">
+          <th mat-header-cell *matHeaderCellDef>Cantidad</th>
+          <td mat-cell *matCellDef="let element">{{ element.cantidad }}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr
+          mat-row
+          *matRowDef="let row; columns: displayedColumns; let element"
+          (click)="abrirVentanaEditar()"
+        ></tr>
+      </table>
+      <mat-paginator
+        [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+        aria-label="Select page of periodic elements"
+      >
+      </mat-paginator>
+    </div>
+  
+    <div class="botones">
+      <span class="spacer"></span>
+      <button
+        class="agregar_servidor"
+        mat-mini-fab
+        color="primary"
+        (click)="abrirVentanaAgregar()"
+      >
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="add"
+        ></mat-icon>
+      </button>
+    </div>
+  </div>
+  

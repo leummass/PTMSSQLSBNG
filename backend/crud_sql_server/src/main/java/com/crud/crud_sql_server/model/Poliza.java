@@ -6,7 +6,7 @@ import lombok.Data;
 public class Poliza {
     int idpolizas;
     int empleadogenero;
-    int sku;
+    String sku;
     int cantidad;
     String fecha;
 
@@ -18,7 +18,7 @@ public class Poliza {
         return empleadogenero;
     }
 
-    public int getSku() {
+    public String getSku() {
         return sku;
     }
 

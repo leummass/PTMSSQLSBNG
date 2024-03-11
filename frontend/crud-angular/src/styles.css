@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.spacer{
+    text-align: center;
+    color: #3F51B5;
+    flex: 1 1 auto;
+}
+
+.form_anadir{
+    width:80%;
+    margin:auto;
+    background-color: #EAE8E8;
+    border-radius: 5%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+    padding-top:2%;
+}

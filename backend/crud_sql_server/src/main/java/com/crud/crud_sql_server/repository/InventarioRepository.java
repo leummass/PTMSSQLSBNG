@@ -33,7 +33,7 @@ public class InventarioRepository implements IInventarioRepository{
         return jdbcCall.execute(parametros);
     }
     @Override
-    public Map<String, Object> eliminarArticulo(int SKU){
+    public Map<String, Object> eliminarArticulo(String SKU){
         String procedimientoAlmacenado = "SP_ELIMINARARTICULO";
 
         SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
@@ -44,7 +44,7 @@ public class InventarioRepository implements IInventarioRepository{
         return jdbcCall.execute(parametros);
     }
     @Override
-    public Map<String, Object> consultaInventarioXSKU(int SKU){
+    public Map<String, Object> consultaInventarioXSKU(String SKU){
         String procedimientoAlmacenado = "SP_CONSULTAINVENTARIOXSKU";
 
         SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)

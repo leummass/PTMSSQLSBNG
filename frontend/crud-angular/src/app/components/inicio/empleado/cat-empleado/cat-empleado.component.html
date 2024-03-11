@@ -1,0 +1,51 @@
+<div class="container">
+    <mat-toolbar>
+      <span class="spacer">Catálogo de empleados</span>
+    </mat-toolbar>
+    <mat-form-field class="filtro">
+      <mat-label>Filtro</mat-label>
+      <input  matInput (keyup)="filtrar($event)" #input>
+    </mat-form-field>
+  
+    <div class="contenedor_tabla mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" class=" tabla">
+        <ng-container matColumnDef="ID">
+          <th mat-header-cell *matHeaderCellDef>ID</th>
+          <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Nombre">
+          <th mat-header-cell *matHeaderCellDef>Nombre</th>
+          <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Apellido">
+          <th mat-header-cell *matHeaderCellDef>Apellido</th>
+          <td mat-cell *matCellDef="let element">{{ element.apellido }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="Puesto">
+          <th mat-header-cell *matHeaderCellDef>Puesto</th>
+          <td mat-cell *matCellDef="let element">{{ element.puesto }}</td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons
+                   aria-label="Select page of periodic elements">
+    </mat-paginator>
+    </div>
+    <div class="botones">
+      <span class="spacer"></span>
+      <button class="agregar_servidor" mat-mini-fab color="primary" (click)="abrirVentanaAgregar()">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="add"
+        ></mat-icon>
+      </button>
+    </div>
+  </div>
+  
