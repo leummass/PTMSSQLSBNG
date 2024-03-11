@@ -8,16 +8,30 @@ AS
 BEGIN
 	DECLARE @Resultado INT;
 	DECLARE @Mensaje VARCHAR(200);
+	DECLARE @CantidadInventario INT;
 	BEGIN TRY
 		BEGIN TRANSACTION;
+		
+		SELECT @CantidadInventario = Cantidad FROM Inventario WHERE SKU = @SKU;
+		IF @CantidadInventario >= @Cantidad
+		BEGIN
+		
+			INSERT INTO Polizas
+			VALUES(@IdPolizas,@EmpleadoGenero, @SKU, @Cantidad, @Fecha);
+			
+			UPDATE Inventario 
+			SET Cantidad = Cantidad - @Cantidad
+			WHERE SKU = @SKU
+			COMMIT TRANSACTION;
 
-		INSERT INTO Polizas
-		VALUES(@IdPolizas,@EmpleadoGenero, @SKU, @Cantidad, @Fecha);
-
-		COMMIT TRANSACTION;
-
-		SET @Resultado = 1;
-		SET @Mensaje = 'Se guardó el registro exitosamente'
+			SET @Resultado = 1;
+			SET @Mensaje = 'Se guardó el registro exitosamente'
+		END
+		ELSE
+		BEGIN
+			SET @Resultado = 0;
+			SET @Mensaje = 'No hay cantidad suficiente en el inventario'
+		END
 
 	END TRY
 	BEGIN CATCH

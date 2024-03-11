@@ -13,27 +13,23 @@ public class EmpleadoService implements IEmpleadoService{
     @Autowired
     private IEmpleadoRepository iEmpleadoRepository;
     @Override
-    public List<Empleado> findAll() {
-        List<Empleado> listaEmpleados;
-        try {
-            listaEmpleados = iEmpleadoRepository.findAll();
-        } catch (Exception ex) {
-            throw ex;
-        }
-        return listaEmpleados;
-    }
-
-    @Override
-    public int save(Empleado empleado) {
-        return 0;
-    }
-
-    @Override
-    public int deleteById(int id) {
-        return 0;
+    public Map<String, Object> consultaEmpleados() {
+        return iEmpleadoRepository.consultaEmpleados();
     }
     @Override
     public Map<String, Object> actualizarEmpleadoProc(Empleado empleado){
         return iEmpleadoRepository.actualizarEmpleado(empleado);
+    }
+    @Override
+    public Map<String, Object> eliminarEmpleado(int IdEmpleado){
+        return iEmpleadoRepository.eliminarEmpleado(IdEmpleado);
+    }
+    @Override
+    public Map<String, Object> consultaEmpleadoXId(int IdEmpleado){
+        return iEmpleadoRepository.consultaEmpleadoXId(IdEmpleado);
+    }
+    @Override
+    public Map<String, Object> anadirEmpleado(Empleado empleado){
+        return iEmpleadoRepository.anadirEmpleado(empleado);
     }
 }

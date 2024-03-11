@@ -1,5 +1,5 @@
 CREATE PROC SP_ACTUALIZAPOLIZA
-	@IdPoliza INT,
+	@IdPolizas INT,
 	@EmpleadoGenero INT,
 	@SKU VARCHAR(20),
 	@Cantidad INT,
@@ -12,24 +12,24 @@ BEGIN
 		
 		BEGIN TRANSACTION;
 
-		DECLARE @SKUAnterior INT;
+		DECLARE @SKUAnterior VARCHAR(20);
 		DECLARE @CantidadAnterior INT;
 
 		SELECT @SKUAnterior = SKU, @CantidadAnterior = Cantidad
 		FROM Polizas
-		WHERE IdPolizas = @IdPoliza;
+		WHERE IdPolizas = @IdPolizas;
 
-		IF @SKUAnterior != @SKU
+		IF @SKUAnterior <> @SKU
 		BEGIN
 		--CASO 1: SON DISTINTOS ARTICULOS
 			DECLARE @CantidadInventario INT;
 			SELECT @CantidadInventario = Cantidad FROM Inventario WHERE SKU = @SKU;
 
-			IF @CantidadInventario > @Cantidad 
+			IF @CantidadInventario >= @Cantidad 
 			BEGIN
 				UPDATE Polizas 
 				SET EmpleadoGenero = @EmpleadoGenero, SKU = @SKU, Cantidad = @Cantidad, Fecha = @Fecha
-				WHERE IdPolizas = @IdPoliza;
+				WHERE IdPolizas = @IdPolizas;
 				UPDATE Inventario SET Cantidad = @CantidadInventario - @Cantidad WHERE SKU = @SKU;
 				UPDATE Inventario SET Cantidad = Cantidad + @CantidadAnterior WHERE SKU = @SKUAnterior;
 
@@ -51,15 +51,15 @@ BEGIN
 			DECLARE @CantidadPreviaPoliza INT;
 			DECLARE @DiferenciaInventario INT;
 			
-			SELECT @CantidadPreviaPoliza = Cantidad FROM Polizas WHERE IdPolizas = @IdPoliza;
+			SELECT @CantidadPreviaPoliza = Cantidad FROM Polizas WHERE IdPolizas = @IdPolizas;
 			SELECT @DiferenciaInventario = @Cantidad - @CantidadPreviaPoliza;
 			SELECT @CantidadInventario2 = Cantidad FROM Inventario WHERE SKU = @SKU;
 
-			IF @CantidadInventario2 > @DiferenciaInventario
+			IF @CantidadInventario2 >= @DiferenciaInventario
 			BEGIN
 				UPDATE Polizas 
 				SET EmpleadoGenero = @EmpleadoGenero, SKU = @SKU, Cantidad = @Cantidad, Fecha = @Fecha
-				WHERE IdPolizas = @IdPoliza;
+				WHERE IdPolizas = @IdPolizas;
 				UPDATE Inventario SET Cantidad = @CantidadInventario2 - @DiferenciaInventario WHERE SKU = @SKU;
 
 				COMMIT;

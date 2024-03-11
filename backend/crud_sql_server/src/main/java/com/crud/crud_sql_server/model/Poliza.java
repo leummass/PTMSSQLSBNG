@@ -4,21 +4,21 @@ import lombok.Data;
 
 @Data
 public class Poliza {
-    int idPolizas;
-    int empleadoGenero;
-    String sku;
+    int idpolizas;
+    int empleadogenero;
+    int sku;
     int cantidad;
     String fecha;
 
     public int getIdPolizas() {
-        return idPolizas;
+        return idpolizas;
     }
 
     public int getEmpleadoGenero() {
-        return empleadoGenero;
+        return empleadogenero;
     }
 
-    public String getSku() {
+    public int getSku() {
         return sku;
     }
 

@@ -4,11 +4,11 @@ import lombok.Data;
 
 @Data
 public class Inventario {
-    String sku;
+    int sku;
     String nombre;
     int cantidad;
 
-    public String getSKU() {
+    public int getSKU() {
         return sku;
     }
 

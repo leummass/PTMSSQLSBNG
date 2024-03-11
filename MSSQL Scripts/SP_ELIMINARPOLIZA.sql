@@ -5,7 +5,7 @@ BEGIN
 	DECLARE @Resultado INT;
 	DECLARE @Mensaje VARCHAR(200);
 	DECLARE @CantidadArticuloPoliza INT;
-	DECLARE @SKUArticuloPoliza VARCHAR(20);
+	DECLARE @SKUArticuloPoliza INT;
 	BEGIN TRY
 		BEGIN TRANSACTION;
 		SELECT @CantidadArticuloPoliza = Cantidad, @SKUArticuloPoliza = SKU

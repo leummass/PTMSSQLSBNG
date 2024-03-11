@@ -1,11 +1,14 @@
 package com.crud.crud_sql_server.model;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class RespuestaJSON {
     private Map<String, Object> meta;
     private Map<String, Object> data;
+
+
 
     public RespuestaJSON() {
         this.meta = new HashMap<>();
@@ -27,4 +30,5 @@ public class RespuestaJSON {
     public void setData(Map<String, Object> data) {
         this.data = data;
     }
+
 }

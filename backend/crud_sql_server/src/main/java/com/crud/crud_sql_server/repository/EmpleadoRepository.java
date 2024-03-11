@@ -2,17 +2,12 @@ package com.crud.crud_sql_server.repository;
 
 import com.crud.crud_sql_server.model.Empleado;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcCall;
 import org.springframework.stereotype.Repository;
 
-import java.sql.CallableStatement;
-import java.sql.Types;
-import java.util.HashMap;
-import java.util.List;
+
 import java.util.Map;
 
 
@@ -21,17 +16,11 @@ public class EmpleadoRepository implements IEmpleadoRepository{
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @Override
-    public List<Empleado> findAll(){
-        String SQL = "EXEC SP_CONSULTAEMPLEADOS";
-        return jdbcTemplate.query(SQL, BeanPropertyRowMapper.newInstance(Empleado.class));
-    }
-    @Override
-    public int save(Empleado empleado){
-        return 1;
-    }
-    @Override
-    public int deleteById(int id){
-        return 1;
+    public Map<String, Object> consultaEmpleados(){
+        String procedimientoAlmacenado = "SP_CONSULTAEMPLEADOS";
+        SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
+                .withProcedureName(procedimientoAlmacenado);
+        return jdbcCall.execute();
     }
     @Override
     public Map<String, Object> actualizarEmpleado(Empleado empleado){
@@ -40,17 +29,45 @@ public class EmpleadoRepository implements IEmpleadoRepository{
         SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
                 .withProcedureName(procedimientoAlmacenado);
 
-
-        // Crear un mapa con los parámetros
         MapSqlParameterSource parametros = new MapSqlParameterSource()
                 .addValue("IdEmpleado", empleado.getIdEmpleado())
                 .addValue("Nombre",empleado.getNombre())
                 .addValue("Apellido", empleado.getApellido())
                 .addValue("Puesto", empleado.getPuesto());
+        return jdbcCall.execute(parametros);
+    }
+    @Override
+    public Map<String, Object> eliminarEmpleado(int IdEmpleado){
+        String procedimientoAlmacenado = "SP_ELIMINAREMPLEADO";
 
-        // Ejecutar el procedimiento almacenado y recuperar los resultados
+        SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
+                .withProcedureName(procedimientoAlmacenado);
 
-        // Procesar los resultados si es necesario
+        MapSqlParameterSource parametros = new MapSqlParameterSource()
+                .addValue("IdEmpleado", IdEmpleado);
+        return jdbcCall.execute(parametros);
+    }
+    public Map<String, Object> consultaEmpleadoXId(int IdEmpleado){
+        String procedimientoAlmacenado = "SP_CONSULTAEMPLEADOXID";
+
+        SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
+                .withProcedureName(procedimientoAlmacenado);
+
+        MapSqlParameterSource parametros = new MapSqlParameterSource()
+                .addValue("IdEmpleado", IdEmpleado);
+        return jdbcCall.execute(parametros);
+    }
+    public Map<String, Object> anadirEmpleado(Empleado empleado){
+        String procedimientoAlmacenado = "SP_ANADIREMPLEADO";
+
+        SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
+                .withProcedureName(procedimientoAlmacenado);
+
+        MapSqlParameterSource parametros = new MapSqlParameterSource()
+                .addValue("IdEmpleado", empleado.getIdEmpleado())
+                .addValue("Nombre",empleado.getNombre())
+                .addValue("Apellido", empleado.getApellido())
+                .addValue("Puesto", empleado.getPuesto());
         return jdbcCall.execute(parametros);
     }
 }

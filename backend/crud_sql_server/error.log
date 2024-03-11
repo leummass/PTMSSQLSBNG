@@ -2,3 +2,531 @@
 09:25:16.783 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 09:25:16 GMT-07:00 2024
 09:25:16.783 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado: actualizarEmpleado
 09:25:16.783 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+10:16:07.248 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 2
+10:16:07.253 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 10:16:07 GMT-07:00 2024
+10:16:07.256 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+10:16:07.257 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+10:16:07.257 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún registro para eliminar
+10:16:14.139 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+10:16:14.139 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 10:16:14 GMT-07:00 2024
+10:16:14.139 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+10:16:14.139 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+10:16:14.139 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+11:48:08.067 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idEmpleado=7, nombre=Arturo, apellido=Rojas, puesto=Tester)
+11:48:08.118 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 11:48:08 GMT-07:00 2024
+11:48:08.118 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+11:48:08.118 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+11:48:08.118 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+12:09:59.272 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idEmpleado=2, nombre=Arturo, apellido=Rojas, puesto=Tester)
+12:09:59.275 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 12:09:59 GMT-07:00 2024
+12:09:59.275 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+12:09:59.275 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+12:09:59.275 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+12:10:11.634 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idEmpleado=4, nombre=Arturo, apellido=Rojas, puesto=Tester)
+12:10:11.634 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Sun Mar 10 12:10:11 GMT-07:00 2024
+12:10:11.634 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+12:10:11.634 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+12:10:11.634 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+13:09:32.694 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=123, nombre=articulo22, cantidad=0)
+13:09:32.695 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 13:09:32 GMT-07:00 2024
+13:09:32.695 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+13:09:32.695 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+13:09:32.695 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+13:26:01.841 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el articulo: Inventario(sku=123A, nombre=articulo22, cantidad=0)
+13:26:01.845 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 13:26:01 GMT-07:00 2024
+13:26:01.845 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ANADIRARTICULO
+13:26:01.845 ERROR c.c.c.c.InventarioController - Método ejecutado: anadirArticulo
+13:26:01.845 ERROR c.c.c.c.InventarioController - Mensaje del error: Ya hay un articulo con el mismo SKU, intente con uno diferente
+13:28:25.291 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el articulo: Inventario(sku=12356A, nombre=articulo22, cantidad=300)
+13:28:25.291 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 13:28:25 GMT-07:00 2024
+13:28:25.291 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ANADIRARTICULO
+13:28:25.291 ERROR c.c.c.c.InventarioController - Método ejecutado: anadirArticulo
+13:28:25.291 ERROR c.c.c.c.InventarioController - Mensaje del error: Ya hay un articulo con el mismo SKU, intente con uno diferente
+13:40:15.871 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 123A
+13:40:15.872 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 13:40:15 GMT-07:00 2024
+13:40:15.872 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+13:40:15.872 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+13:40:15.872 ERROR c.c.c.c.InventarioController - Mensaje del error: El articulo está siendo referenciado por otra tabla
+13:40:27.086 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 1234A
+13:40:27.086 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 13:40:27 GMT-07:00 2024
+13:40:27.086 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+13:40:27.086 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+13:40:27.086 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para eliminar
+13:40:30.771 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 12345A
+13:40:30.771 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 13:40:30 GMT-07:00 2024
+13:40:30.771 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+13:40:30.771 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+13:40:30.771 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para eliminar
+15:02:18.148 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=500, fecha=2024-03-08)
+15:02:18.151 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:02:18 GMT-07:00 2024
+15:02:18.152 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:02:18.152 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:02:18.152 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que hubo un error: Conversion failed when converting the varchar value '123A' to data type int.
+15:04:39.797 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=500, fecha=2024-03-08)
+15:04:39.797 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:04:39 GMT-07:00 2024
+15:04:39.797 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:04:39.797 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:04:39.797 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:04:50.449 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=300, fecha=2024-03-08)
+15:04:50.449 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:04:50 GMT-07:00 2024
+15:04:50.449 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:04:50.449 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:04:50.449 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:05:32.267 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=300, fecha=2024-03-08)
+15:05:32.267 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:05:32 GMT-07:00 2024
+15:05:32.267 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:05:32.267 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:05:32.267 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:08:39.341 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=100, fecha=2024-03-08)
+15:08:39.341 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:08:39 GMT-07:00 2024
+15:08:39.341 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:08:39.341 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:08:39.341 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:09:14.484 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=2, fecha=2024-03-08)
+15:09:14.484 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:09:14 GMT-07:00 2024
+15:09:14.484 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:09:14.484 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:09:14.484 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:09:26.024 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=3, fecha=2024-03-08)
+15:09:26.024 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:09:26 GMT-07:00 2024
+15:09:26.024 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:09:26.024 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:09:26.024 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:09:30.077 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:09:30.077 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:09:30 GMT-07:00 2024
+15:09:30.077 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:09:30.077 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:09:30.077 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:14:51.920 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:14:51.921 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:14:51 GMT-07:00 2024
+15:14:51.921 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:14:51.921 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:14:51.921 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:17:07.860 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:17:07.860 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:17:07 GMT-07:00 2024
+15:17:07.860 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:17:07.861 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:17:07.861 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:26:24.921 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:26:24.922 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:26:24 GMT-07:00 2024
+15:26:24.922 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:26:24.922 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:26:24.922 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:31:32.964 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:31:32.964 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:31:32 GMT-07:00 2024
+15:31:32.964 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:31:32.964 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:31:32.964 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:31:54.127 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:31:54.127 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:31:54 GMT-07:00 2024
+15:31:54.127 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:31:54.127 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:31:54.127 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:31:55.684 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:31:55.684 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:31:55 GMT-07:00 2024
+15:31:55.684 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:31:55.684 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:31:55.684 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:33:29.325 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:33:29.326 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:33:29 GMT-07:00 2024
+15:33:29.326 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:33:29.326 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:33:29.326 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:33:31.690 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:33:31.690 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:33:31 GMT-07:00 2024
+15:33:31.690 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:33:31.690 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:33:31.690 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:33:32.827 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:33:32.827 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:33:32 GMT-07:00 2024
+15:33:32.827 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:33:32.827 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:33:32.827 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventariossssss
+15:34:18.683 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:34:18.683 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:34:18 GMT-07:00 2024
+15:34:18.683 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:34:18.683 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:34:18.683 ERROR c.c.c.controller.PolizaController - Mensaje del error: null
+15:34:45.362 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:34:45.362 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:34:45 GMT-07:00 2024
+15:34:45.362 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:34:45.362 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:34:45.362 ERROR c.c.c.controller.PolizaController - Mensaje del error: null
+15:35:53.441 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=4, fecha=2024-03-08)
+15:35:53.441 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:35:53 GMT-07:00 2024
+15:35:53.441 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:35:53.441 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:35:53.441 ERROR c.c.c.controller.PolizaController - Mensaje del error: SON IGUALES XD
+15:37:03.050 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=0, fecha=2024-03-08)
+15:37:03.050 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:37:03 GMT-07:00 2024
+15:37:03.050 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:37:03.050 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:37:03.050 ERROR c.c.c.controller.PolizaController - Mensaje del error: SON IGUALES XD
+15:37:12.379 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=0, fecha=2024-03-08)
+15:37:12.380 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:37:12 GMT-07:00 2024
+15:37:12.380 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:37:12.380 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:37:12.380 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:37:34.589 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=-50, fecha=2024-03-08)
+15:37:34.589 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:37:34 GMT-07:00 2024
+15:37:34.589 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:37:34.589 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:37:34.589 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:37:40.924 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:37:40.925 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:37:40 GMT-07:00 2024
+15:37:40.925 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:37:40.925 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:37:40.925 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:37:43.344 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:37:43.344 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:37:43 GMT-07:00 2024
+15:37:43.344 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+15:37:43.344 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+15:37:43.344 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+15:40:57.082 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:40:57.082 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:40:57 GMT-07:00 2024
+15:40:57.082 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:40:57.082 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:40:57.082 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:42:08.777 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:42:08.777 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:42:08 GMT-07:00 2024
+15:42:08.777 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:42:08.777 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:42:08.777 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:42:10.348 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:42:10.348 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:42:10 GMT-07:00 2024
+15:42:10.348 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:42:10.348 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:42:10.348 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:42:11.270 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:42:11.270 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:42:11 GMT-07:00 2024
+15:42:11.270 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:42:11.270 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:42:11.270 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:42:12.124 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:42:12.124 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:42:12 GMT-07:00 2024
+15:42:12.124 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:42:12.124 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:42:12.124 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:42:52.670 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:42:52.670 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:42:52 GMT-07:00 2024
+15:42:52.670 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:42:52.670 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:42:52.670 ERROR c.c.c.controller.PolizaController - Mensaje del error: 123A
+15:44:18.371 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:44:18.372 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:44:18 GMT-07:00 2024
+15:44:18.372 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:44:18.372 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:44:18.372 ERROR c.c.c.controller.PolizaController - Mensaje del error: 123A
+15:44:38.647 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:44:38.648 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:44:38 GMT-07:00 2024
+15:44:38.648 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:44:38.648 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:44:38.648 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:45:19.710 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=null, cantidad=30, fecha=2024-03-08)
+15:45:19.710 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:45:19 GMT-07:00 2024
+15:45:19.710 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:45:19.710 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:45:19.710 ERROR c.c.c.controller.PolizaController - Mensaje del error: Error inesperado: Cannot insert the value NULL into column 'SKU', table 'EvaluacionTecnicaSV.dbo.Polizas'; column does not allow nulls. INSERT fails.
+15:45:33.520 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:45:33.520 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:45:33 GMT-07:00 2024
+15:45:33.520 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:45:33.520 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:45:33.520 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:45:35.435 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:45:35.435 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:45:35 GMT-07:00 2024
+15:45:35.435 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:45:35.435 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:45:35.435 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+15:49:07.209 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=123A, cantidad=30, fecha=2024-03-08)
+15:49:07.209 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 15:49:07 GMT-07:00 2024
+15:49:07.209 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+15:49:07.209 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+15:49:07.209 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+17:19:38.287 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el articulo: Inventario(sku=1, nombre=pantalon, cantidad=300)
+17:19:38.291 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 17:19:38 GMT-07:00 2024
+17:19:38.291 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ANADIRARTICULO
+17:19:38.291 ERROR c.c.c.c.InventarioController - Método ejecutado: anadirArticulo
+17:19:38.291 ERROR c.c.c.c.InventarioController - Mensaje del error: Ya hay un articulo con el mismo SKU, intente con uno diferente
+17:46:54.901 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:46:54.901 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:46:54 GMT-07:00 2024
+17:46:54.901 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:46:54.901 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:46:54.901 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+17:47:13.919 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:47:13.920 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:47:13 GMT-07:00 2024
+17:47:13.920 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:47:13.920 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:47:13.920 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+17:48:20.128 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el articulo: Inventario(sku=1, nombre=pantalon, cantidad=300)
+17:48:20.128 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 17:48:20 GMT-07:00 2024
+17:48:20.128 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ANADIRARTICULO
+17:48:20.128 ERROR c.c.c.c.InventarioController - Método ejecutado: anadirArticulo
+17:48:20.128 ERROR c.c.c.c.InventarioController - Mensaje del error: Ya hay un articulo con el mismo SKU, intente con uno diferente
+17:48:26.360 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:48:26.360 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:48:26 GMT-07:00 2024
+17:48:26.360 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:48:26.360 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:48:26.360 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+17:50:45.175 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:50:45.175 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:50:45 GMT-07:00 2024
+17:50:45.175 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:50:45.175 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:50:45.175 ERROR c.c.c.controller.PolizaController - Mensaje del error: 1
+17:50:51.635 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:50:51.636 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:50:51 GMT-07:00 2024
+17:50:51.636 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:50:51.636 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:50:51.636 ERROR c.c.c.controller.PolizaController - Mensaje del error: 1
+17:53:35.105 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:53:35.105 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:53:35 GMT-07:00 2024
+17:53:35.105 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:53:35.105 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:53:35.105 ERROR c.c.c.controller.PolizaController - Mensaje del error: 1
+17:54:46.673 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:54:46.676 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:54:46 GMT-07:00 2024
+17:54:46.676 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:54:46.676 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:54:46.676 ERROR c.c.c.controller.PolizaController - Mensaje del error: 1
+17:55:20.772 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:55:20.775 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:55:20 GMT-07:00 2024
+17:55:20.775 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:55:20.776 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:55:20.776 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+17:56:46.067 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:56:46.071 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:56:46 GMT-07:00 2024
+17:56:46.071 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:56:46.071 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:56:46.071 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+17:58:24.913 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:58:24.917 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:58:24 GMT-07:00 2024
+17:58:24.917 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:58:24.917 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:58:24.917 ERROR c.c.c.controller.PolizaController - Mensaje del error: 1
+17:58:44.952 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+17:58:44.956 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 17:58:44 GMT-07:00 2024
+17:58:44.956 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+17:58:44.956 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+17:58:44.956 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:02:39.804 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:02:39.804 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:02:39 GMT-07:00 2024
+18:02:39.804 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:02:39.804 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:02:39.804 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:03:23.347 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:03:23.351 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:03:23 GMT-07:00 2024
+18:03:23.351 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:03:23.351 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:03:23.351 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:03:46.374 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=2, cantidad=30, fecha=2024-03-08)
+18:03:46.375 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:03:46 GMT-07:00 2024
+18:03:46.375 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:03:46.375 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:03:46.375 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:03:52.760 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=3, cantidad=30, fecha=2024-03-08)
+18:03:52.760 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:03:52 GMT-07:00 2024
+18:03:52.760 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:03:52.760 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:03:52.760 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:05:21.182 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=3, cantidad=30, fecha=2024-03-08)
+18:05:21.186 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:05:21 GMT-07:00 2024
+18:05:21.186 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:05:21.186 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:05:21.186 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:07:35.063 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=555, cantidad=30, fecha=2024-03-08)
+18:07:35.063 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:07:35 GMT-07:00 2024
+18:07:35.063 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:07:35.063 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:07:35.063 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:31:47.147 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:31:47.147 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:31:47 GMT-07:00 2024
+18:31:47.147 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:31:47.147 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:31:47.147 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:38:09.571 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:38:09.571 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:38:09 GMT-07:00 2024
+18:38:09.571 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:38:09.571 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:38:09.571 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:38:11.027 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:38:11.027 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:38:11 GMT-07:00 2024
+18:38:11.027 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:38:11.027 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:38:11.027 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:38:12.275 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:38:12.275 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:38:12 GMT-07:00 2024
+18:38:12.275 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:38:12.275 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:38:12.275 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:38:15.742 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:38:15.742 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:38:15 GMT-07:00 2024
+18:38:15.742 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:38:15.742 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:38:15.743 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:38:17.277 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:38:17.277 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:38:17 GMT-07:00 2024
+18:38:17.277 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:38:17.277 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:38:17.277 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo guardar el registro ya que no hay suficiente inventario
+18:38:30.585 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el articulo: Inventario(sku=1, nombre=pantalon, cantidad=300)
+18:38:30.586 ERROR c.c.c.c.InventarioController - Fecha del error: Sun Mar 10 18:38:30 GMT-07:00 2024
+18:38:30.586 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ANADIRARTICULO
+18:38:30.586 ERROR c.c.c.c.InventarioController - Método ejecutado: anadirArticulo
+18:38:30.586 ERROR c.c.c.c.InventarioController - Mensaje del error: Ya hay un articulo con el mismo SKU, intente con uno diferente
+18:43:49.647 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:43:49.647 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:43:49 GMT-07:00 2024
+18:43:49.647 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:43:49.647 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:43:49.647 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:44:02.420 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:44:02.421 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:44:02 GMT-07:00 2024
+18:44:02.421 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:44:02.421 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:44:02.421 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:44:04.570 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:44:04.570 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:44:04 GMT-07:00 2024
+18:44:04.570 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:44:04.570 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:44:04.570 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:44:12.613 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=0, cantidad=30, fecha=2024-03-08)
+18:44:12.614 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:44:12 GMT-07:00 2024
+18:44:12.614 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:44:12.614 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:44:12.614 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:44:23.303 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=3, cantidad=30, fecha=2024-03-08)
+18:44:23.303 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:44:23 GMT-07:00 2024
+18:44:23.303 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:44:23.303 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:44:23.303 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:44:31.681 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:44:31.681 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:44:31 GMT-07:00 2024
+18:44:31.681 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:44:31.681 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:44:31.681 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:44:34.467 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idPolizas=0, empleadoGenero=0, sku=1, cantidad=30, fecha=2024-03-08)
+18:44:34.467 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:44:34 GMT-07:00 2024
+18:44:34.467 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:44:34.467 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:44:34.467 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+18:50:41.372 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=30, fecha=2024-03-08)
+18:50:41.375 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:50:41 GMT-07:00 2024
+18:50:41.375 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:50:41.375 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:50:41.375 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+18:50:54.535 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=2, empleadogenero=1, sku=1, cantidad=30, fecha=2024-03-08)
+18:50:54.535 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:50:54 GMT-07:00 2024
+18:50:54.535 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:50:54.535 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:50:54.535 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+18:50:58.260 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=2, empleadogenero=1, sku=5, cantidad=30, fecha=2024-03-08)
+18:50:58.260 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:50:58 GMT-07:00 2024
+18:50:58.260 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:50:58.260 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:50:58.260 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+18:52:16.697 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=3, empleadogenero=1, sku=100, cantidad=30, fecha=2024-03-08)
+18:52:16.697 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 18:52:16 GMT-07:00 2024
+18:52:16.697 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:52:16.697 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:52:16.697 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:01:36.004 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=5, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:01:36.004 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:01:36 GMT-07:00 2024
+19:01:36.004 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:01:36.004 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:01:36.004 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:05:25.542 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=7, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:05:25.543 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:05:25 GMT-07:00 2024
+19:05:25.543 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:05:25.543 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:05:25.543 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:09:36.131 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=15, empleadogenero=1, sku=555, cantidad=30, fecha=2024-03-08)
+19:09:36.135 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:09:36 GMT-07:00 2024
+19:09:36.136 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:09:36.136 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:09:36.136 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:14:30.240 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=335, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:14:30.244 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:14:30 GMT-07:00 2024
+19:14:30.244 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:14:30.244 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:14:30.244 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:14:46.436 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:14:46.437 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:14:46.437 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:14:46.437 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:14:46.437 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:14:46.437 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=1, sku=6, cantidad=30, fecha=2024-03-08)
+19:15:55.861 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=551, empleadogenero=999999, sku=6, cantidad=30, fecha=2024-03-08)
+19:15:55.861 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:15:55 GMT-07:00 2024
+19:15:55.861 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:15:55.861 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:15:55.861 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:16:00.139 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=999999, sku=6, cantidad=30, fecha=2024-03-08)
+19:16:00.139 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:16:00 GMT-07:00 2024
+19:16:00.139 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:16:00.139 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:16:00.139 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+19:16:47.239 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=999999, sku=6, cantidad=30, fecha=2024-03-08)
+19:16:47.239 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:16:47 GMT-07:00 2024
+19:16:47.239 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:16:47.239 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:16:47.239 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+19:17:56.574 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=999999, sku=6, cantidad=30, fecha=2024-03-08)
+19:17:56.574 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:17:56 GMT-07:00 2024
+19:17:56.574 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:17:56.574 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:17:56.574 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+19:18:03.111 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:18:03.111 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:18:03.111 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:18:03.111 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:18:03.111 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:18:03.111 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:05.959 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=443, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:05.963 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:19:05 GMT-07:00 2024
+19:19:05.963 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:19:05.963 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:19:05.963 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:19:12.749 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:12.749 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:12.749 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:12.749 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:12.749 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:19:12.749 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:22:41.124 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:22:41.125 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:22:41.125 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:22:41.125 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:22:41.125 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:22:41.125 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:53.504 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=123123, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:53.504 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:24:53 GMT-07:00 2024
+19:24:53.504 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:24:53.504 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:24:53.504 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+19:24:58.149 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:58.149 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:58.149 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:58.149 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:58.149 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:24:58.149 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44444, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:26:14.687 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=4444124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:26:14.688 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=4444124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:26:14.688 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=4444124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:26:14.688 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=4444124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:26:14.688 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=4444124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:26:14.688 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=4444124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:53:08.995 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:53:08.996 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:53:08.996 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:53:08.996 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:53:08.996 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:53:08.996 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:55:33.050 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=44442124, empleadogenero=1, sku=551, cantidad=30, fecha=2024-03-08)
+19:55:33.053 ERROR c.c.c.controller.PolizaController - Fecha del error: Sun Mar 10 19:55:33 GMT-07:00 2024
+19:55:33.053 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+19:55:33.053 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+19:55:33.053 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+20:09:29.975 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
+20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
+20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
+20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
+20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
+20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
