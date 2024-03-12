@@ -35,7 +35,7 @@ BEGIN
 
 				COMMIT;
 				SET @Resultado = 1;
-				SET @Mensaje = 'Se ha actualizado la poliza';
+				SET @Mensaje = 'Se ha actualizado la poliza con ID '+ CAST(@IdPolizas AS VARCHAR(10));
 			END
 			ELSE
 			BEGIN
@@ -64,7 +64,7 @@ BEGIN
 
 				COMMIT;
 				SET @Resultado = 1;
-				SET @Mensaje = 'Se ha actualizado la poliza';
+				SET @Mensaje = 'Se ha actualizado la poliza con ID '+ CAST(@IdPolizas AS VARCHAR(10));
 			END
 			ELSE
 			BEGIN

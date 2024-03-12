@@ -5,7 +5,7 @@ BEGIN
 	DECLARE @Resultado INT;
 	DECLARE @Mensaje VARCHAR(200);
 	DECLARE @CantidadArticuloPoliza INT;
-	DECLARE @SKUArticuloPoliza INT;
+	DECLARE @SKUArticuloPoliza VARCHAR(20);
 	BEGIN TRY
 		BEGIN TRANSACTION;
 		SELECT @CantidadArticuloPoliza = Cantidad, @SKUArticuloPoliza = SKU
@@ -21,12 +21,12 @@ BEGIN
 		IF @@ROWCOUNT > 0
 		BEGIN
 			SET @Resultado = 1;
-			SET @Mensaje = 'Se eliminó la poliza correctamente';
+			SET @Mensaje = 'Se eliminó la poliza correctamente con el ID ' + CAST(@IdPolizas AS VARCHAR(20));
 		END
 		ELSE
 		BEGIN
 			SET @Resultado = 0;
-			SET @Mensaje = 'No se encontró ningún registro para eliminar';
+			SET @Mensaje = 'No se encontró ningún registro para eliminar con el ID ' + CAST(@IdPolizas AS VARCHAR(20));
 		END
 		COMMIT TRANSACTION;
 

@@ -1,0 +1,105 @@
+<div class="container">
+    <mat-toolbar>
+      <span class="spacer" *ngIf="!esUpdate">Agregar a inventario</span>
+      <span class="spacer" *ngIf="esUpdate">Consultar/Actualizar/Eliminar inventario</span>
+    </mat-toolbar>
+    <div class="form_anadir">
+      <form [formGroup]="form" (ngSubmit)="enviar()">
+        <mat-grid-list cols="3" rowHeight="90px">
+          <mat-grid-tile [colspan]="3" [rowspan]="2">
+
+            <mat-form-field class="input_form" appearance="outline">
+              <mat-label>SKU</mat-label>
+              
+              <input
+                matInput
+                formControlName="sku"
+                type="text"
+                required
+                [(ngModel)]="inventario.sku"
+              />
+              
+              <mat-error *ngIf="form.get('sku')?.errors">
+                {{ MensajeError("sku") }}
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="input_form" appearance="outline">
+                <mat-label>Nombre</mat-label>
+                
+                <input
+                  matInput
+                  formControlName="nombre"
+                  type="text"
+                  required
+                  [(ngModel)]="inventario.nombre"
+                />
+                
+                <mat-error *ngIf="form.get('nombre')?.errors">
+                  {{ MensajeError("nombre") }}
+                </mat-error>
+              </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="2">
+            <mat-form-field class="input_form" appearance="outline">
+              <mat-label>cantidad</mat-label>
+              <input
+                  matInput
+                  formControlName="cantidad"
+                  type="number"
+                  required
+                  [(ngModel)]="inventario.cantidad"
+                />
+              <mat-error *ngIf="form.get('cantidad')?.errors">
+                {{ MensajeError("cantidad") }}
+              </mat-error>
+            </mat-form-field>
+
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="2" *ngIf="!esUpdate">
+            <button
+              type="submit"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+            >
+              Agregar
+            </button>
+  
+            <button type="button" mat-stroked-button color="warn" (click)="resetForm()">
+              Limpiar
+            </button>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="3" [rowspan]="2" *ngIf="esUpdate">
+            <button
+              type="submit"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+            >
+              Actualizar
+            </button>
+            <button
+              type="button"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="warn"
+              (click)="eliminarInventario()"
+            >
+              Eliminar
+            </button>
+  
+            <button type="button" mat-stroked-button color="warn" (click)="resetForm()">
+              Limpiar
+            </button>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </form>
+    </div>
+  </div>
+  
+

@@ -13,12 +13,12 @@ BEGIN
 		IF @@ROWCOUNT > 0
 		BEGIN
 			SET @Resultado = 1;
-			SET @Mensaje = 'Se eliminó al empleado correctamente';
+			SET @Mensaje = 'Se eliminó al empleado correctamente con ID '+CAST(@IdEmpleado AS VARCHAR(20));
 		END
 		ELSE
 		BEGIN
 			SET @Resultado = 0;
-			SET @Mensaje = 'No se encontró ningún registro para eliminar';
+			SET @Mensaje = 'No se encontró ningún empleado para eliminar con ID '+CAST(@IdEmpleado AS VARCHAR(20));
 		END
 		COMMIT TRANSACTION;
 

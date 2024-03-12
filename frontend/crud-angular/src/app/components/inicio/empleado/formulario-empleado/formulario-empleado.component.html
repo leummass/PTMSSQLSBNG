@@ -1,0 +1,120 @@
+<div class="container">
+    <mat-toolbar>
+      <span class="spacer" *ngIf="!esUpdate">Agregar empleado</span>
+      <span class="spacer" *ngIf="esUpdate">Consultar/Actualizar/Eliminar empleado</span>
+    </mat-toolbar>
+    <div class="form_anadir">
+      <form [formGroup]="form" (ngSubmit)="enviar()">
+        <mat-grid-list cols="3" rowHeight="90px">
+          <mat-grid-tile [colspan]="3" [rowspan]="2">
+
+            <button type="button" mat-flat-button color="primary" (click)="consultaEmpleado()" *ngIf="esUpdate">
+              Buscar
+            </button>
+            <mat-form-field class="input_form" appearance="outline">
+              <mat-label>ID Empleado</mat-label>
+              
+              <input
+                matInput
+                formControlName="idempleado"
+                type="text"
+                required
+                [(ngModel)]="empleado.idempleado"
+              />
+              
+              <mat-error *ngIf="form.get('idempleado')?.errors">
+                {{ MensajeError("idempleado") }}
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="input_form" appearance="outline">
+                <mat-label>Nombre</mat-label>
+                
+                <input
+                  matInput
+                  formControlName="nombre"
+                  type="text"
+                  required
+                  [(ngModel)]="empleado.nombre"
+                />
+                
+                <mat-error *ngIf="form.get('nombre')?.errors">
+                  {{ MensajeError("nombre") }}
+                </mat-error>
+              </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="2">
+            <mat-form-field class="input_form" appearance="outline">
+              <mat-label>Apellido</mat-label>
+              <input
+                  matInput
+                  formControlName="apellido"
+                  type="text"
+                  required
+                  [(ngModel)]="empleado.apellido"
+                />
+              <mat-error *ngIf="form.get('apellido')?.errors">
+                {{ MensajeError("apellido") }}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="input_form" appearance="outline">
+                <mat-label>Puesto</mat-label>
+                <input
+                    matInput
+                    formControlName="puesto"
+                    type="text"
+                    required
+                    [(ngModel)]="empleado.puesto"
+                  />
+                <mat-error *ngIf="form.get('puesto')?.errors">
+                  {{ MensajeError("puesto") }}
+                </mat-error>
+              </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="2" *ngIf="!esUpdate">
+            <button
+              type="submit"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+            >
+              Agregar
+            </button>
+  
+            <button type="button" mat-stroked-button color="warn" (click)="resetForm()">
+              Limpiar
+            </button>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="3" [rowspan]="2" *ngIf="esUpdate">
+            <button
+              type="submit"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+            >
+              Actualizar
+            </button>
+            <button
+            type="button"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="warn"
+              (click)="eliminarEmpleado()"
+            >
+              Eliminar
+            </button>
+  
+            <button type="button" mat-stroked-button color="warn" (click)="resetForm()">
+              Limpiar
+            </button>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </form>
+    </div>
+  </div>
+  

@@ -4,13 +4,13 @@ import lombok.Data;
 
 @Data
 public class Empleado {
-    int idEmpleado;
+    int idempleado;
     String nombre;
     String apellido;
     String puesto;
 
     public int getIdEmpleado() {
-        return idEmpleado;
+        return idempleado;
     }
 
     public String getNombre() {

@@ -15,7 +15,7 @@ BEGIN
 		COMMIT TRANSACTION;
 
 		SET @Resultado = 1;
-		SET @Mensaje = 'Se guardó el registro exitosamente'
+		SET @Mensaje = 'Se guardó el registro exitosamente con SKU '+@SKU
 
 	END TRY
 	BEGIN CATCH

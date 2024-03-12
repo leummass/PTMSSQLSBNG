@@ -22,17 +22,25 @@ BEGIN
 			UPDATE Inventario 
 			SET Cantidad = Cantidad - @Cantidad
 			WHERE SKU = @SKU
-			COMMIT TRANSACTION;
+			
 
 			SET @Resultado = 1;
-			SET @Mensaje = 'Se guardó el registro exitosamente'
+			SET @Mensaje = 'Se guardó el registro exitosamente con el ID'+CAST(@IdPolizas AS VARCHAR(20))
 		END
 		ELSE
 		BEGIN
-			SET @Resultado = 0;
-			SET @Mensaje = 'No hay cantidad suficiente en el inventario'
+			IF EXISTS(SELECT 1 FROM Inventario WHERE SKU = @SKU)
+			BEGIN
+				SET @Resultado = 0;
+				SET @Mensaje = 'No hay cantidad suficiente en el inventario'
+			END
+			ELSE
+			BEGIN
+				SET @Resultado = 0;
+				SET @Mensaje = 'No existe articulo con ID '+@SKU
+			END
 		END
-
+		COMMIT TRANSACTION;
 	END TRY
 	BEGIN CATCH
 
@@ -42,7 +50,7 @@ BEGIN
 		IF ERROR_NUMBER() = 2627
 		BEGIN
 			SET @Resultado = 0;
-			SET @Mensaje = 'Ya hay una poliza con el mismo ID, intente con uno diferente'
+			SET @Mensaje = 'Ya hay una poliza con el mismo ID '+CAST(@IdPolizas AS VARCHAR(20))+', intente con uno diferente'
 		END
 		ELSE IF ERROR_NUMBER() = 547
 		BEGIN

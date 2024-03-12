@@ -2,5 +2,5 @@ CREATE PROC SP_CONSULTAINVENTARIOXSKU
 	@SKU VARCHAR(20)
 AS
 BEGIN
-	SELECT SKU, Nombre, Cantidad FROM Inventario WHERE SKU = @SKU;
+	SELECT SKU AS sku, Nombre AS nombre, Cantidad AS cantidad FROM Inventario WHERE SKU = @SKU;
 END

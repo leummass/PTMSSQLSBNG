@@ -3,6 +3,10 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Inventario } from '../../../../models/inventario.model';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { InventarioService } from '../../../../services/inventario.service';
+import Swal from 'sweetalert2';
+import { VentanaEditarInventarioComponent } from '../ventana-editar-inventario/ventana-editar-inventario.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cat-inventario',
@@ -17,7 +21,9 @@ export class CatInventarioComponent {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor(
-    formBuilder: FormBuilder
+    private inventarioService: InventarioService,
+    formBuilder: FormBuilder,
+    public ventana: MatDialog
   ) {
     this.dataSource.filterPredicate = ((data, filter) => {
       const filters = JSON.parse(filter);
@@ -29,41 +35,45 @@ export class CatInventarioComponent {
     }) as (Inventario: Inventario, string: string) => boolean;
 
     this.form = formBuilder.group({
-      fSKU: '',
       fNombre: '',
+      fSKU: '',
     });
-    this.form.valueChanges.subscribe((value) => {
+    this.form.valueChanges.subscribe((value: {fNombre: any, fSKU: any}) => {
       const filter = [
-        { fNombre: value.fNombre },
-        { fSKU: value.fSKU },
-
-      ];
+         {fNombre: value.fNombre },
+         {fSKU: value.fSKU },
+        ];
       this.dataSource.filter = JSON.stringify(filter);
     });
   }
 
   ngOnInit() {
-    this.obtenerServidores();
-    this.obtenerDetalleServidor();
+    this.obtenerInventario();
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
-  obtenerServidores() {
-    const params = { nombre: '', ipdireccion: '', tipo: '' };
-
+  
+  obtenerInventario(){
+    this.inventarioService.consultaInventario().subscribe(respuesta => {
+      if(respuesta.data.Inventario){
+        this.dataSource.data = respuesta.data.Inventario;
+      }else{
+        Swal.fire({title: 'Error', text: 'No hay elementos en el inventario', icon: 'error', customClass: {
+          confirmButton: 'swal-button--confirm custom-color'
+       }});
+      }
+    })
+  }
+  abrirVentana(inventario: Inventario) {
+    const dialogRef = this.ventana.open(VentanaEditarInventarioComponent, {
+      width: '70%',
+      enterAnimationDuration: '300ms',
+      exitAnimationDuration: '300ms',
+      data: { inventario },
+    });
   }
 
-  obtenerDetalleServidor() {
-    
-  }
-
-  abrirVentanaAgregar(){
-
-  }
-  abrirVentanaEditar(){
-
-  }
 
 }

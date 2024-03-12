@@ -8,11 +8,11 @@
       </mat-expansion-panel-header>
       <mat-panel-description>
         <form [formGroup]="form">
-          <mat-form-field class="filtro">
+          <mat-form-field class="filtro" appearance="outline">
             <mat-label>SKU</mat-label>
             <input matInput formControlName="fSKU" />
           </mat-form-field>
-          <mat-form-field class="filtro">
+          <mat-form-field class="filtro" appearance="outline">
             <mat-label>Nombre</mat-label>
             <input matInput formControlName="fNombre"  />
           </mat-form-field>
@@ -40,7 +40,7 @@
         <tr
           mat-row
           *matRowDef="let row; columns: displayedColumns; let element"
-          (click)="abrirVentanaEditar()"
+          (click)="abrirVentana(element)"
         ></tr>
       </table>
       <mat-paginator
@@ -49,22 +49,6 @@
         aria-label="Select page of periodic elements"
       >
       </mat-paginator>
-    </div>
-  
-    <div class="botones">
-      <span class="spacer"></span>
-      <button
-        class="agregar_servidor"
-        mat-mini-fab
-        color="primary"
-        (click)="abrirVentanaAgregar()"
-      >
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example home icon"
-          fontIcon="add"
-        ></mat-icon>
-      </button>
     </div>
   </div>
   

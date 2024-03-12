@@ -18,9 +18,10 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
 //Modules
 import { FormsModule } from '@angular/forms';
+import { MatNativeDateModule, provideNativeDateAdapter } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -41,6 +42,8 @@ import { FormsModule } from '@angular/forms';
     MatSelectModule,
     MatDialogModule,
     MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     FormsModule
   ],
   exports:[
@@ -60,7 +63,10 @@ import { FormsModule } from '@angular/forms';
     MatSelectModule,
     MatDialogModule,
     MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     FormsModule
-  ]
+  ],
+  providers:[ provideNativeDateAdapter()]
 })
 export class SharedModule { }

@@ -16,7 +16,7 @@ BEGIN
 		COMMIT TRANSACTION;
 
 		SET @Resultado = 1;
-		SET @Mensaje = 'Se guardó el registro exitosamente'
+		SET @Mensaje = 'Se guardó el registro exitosamente con el ID '+ CAST(@IdEmpleado AS VARCHAR(20))
 
 	END TRY
 	BEGIN CATCH

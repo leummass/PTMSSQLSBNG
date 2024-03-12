@@ -27,7 +27,7 @@ BEGIN
         BEGIN
 
             SET @Resultado = 0;
-            SET @Mensaje = 'No se encontró ningún articulo para actualizar.';
+            SET @Mensaje = 'No se encontró ningún articulo para actualizar CON SKU '+ @SKU;
 
         END
         

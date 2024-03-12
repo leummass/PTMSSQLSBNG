@@ -1,0 +1,132 @@
+<div class="container">
+    <mat-toolbar>
+      <span class="spacer" *ngIf="!esUpdate">Agregar poliza</span>
+      <span class="spacer" *ngIf="esUpdate">Consultar/Actualizar/Eliminar poliza</span>
+    </mat-toolbar>
+    <div class="form_anadir">
+      <form [formGroup]="form" (ngSubmit)="enviar()">
+        <mat-grid-list cols="3" rowHeight="90px">
+          <mat-grid-tile [colspan]="3" [rowspan]="2">
+
+            <button type="button" mat-flat-button color="primary" (click)="consultaPoliza()" *ngIf="esUpdate">
+              Buscar
+            </button>
+            <mat-form-field class="input_form" appearance="outline">
+              <mat-label>ID Poliza</mat-label>
+              
+              <input
+                matInput
+                formControlName="idpolizas"
+                type="text"
+                required
+                [(ngModel)]="poliza.idpolizas"
+              />
+              
+              <mat-error *ngIf="form.get('idpolizas')?.errors">
+                {{ MensajeError("idpolizas") }}
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="input_form" appearance="outline">
+                <mat-label>Empleado generó</mat-label>
+                
+                <input
+                  matInput
+                  formControlName="empleadogenero"
+                  type="text"
+                  required
+                  [(ngModel)]="poliza.empleadogenero"
+                />
+                
+                <mat-error *ngIf="form.get('empleadogenero')?.errors">
+                  {{ MensajeError("empleadogenero") }}
+                </mat-error>
+              </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="2">
+            <mat-form-field class="input_form" appearance="outline">
+              <mat-label>SKU</mat-label>
+              <input
+                  matInput
+                  formControlName="sku"
+                  type="text"
+                  required
+                  [(ngModel)]="poliza.sku"
+                />
+              <mat-error *ngIf="form.get('sku')?.errors">
+                {{ MensajeError("sku") }}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="input_form" appearance="outline">
+                <mat-label>Cantidad</mat-label>
+                <input
+                    matInput
+                    formControlName="cantidad"
+                    type="number"
+                    required
+                    [(ngModel)]="poliza.cantidad"
+                  />
+                <mat-error *ngIf="form.get('cantidad')?.errors">
+                  {{ MensajeError("cantidad") }}
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field class="input_form"  appearance="outline">
+                <mat-label>Fecha</mat-label>
+                <input matInput formControlName="fecha" required [matDatepicker]="picker" [(ngModel)]="poliza.fecha" (dateChange)="formatDate()">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error *ngIf="form.get('fecha')?.errors">
+                    {{ MensajeError("fecha") }}
+                  </mat-error>
+              </mat-form-field>
+
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="2" *ngIf="!esUpdate">
+            <button
+              type="submit"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+            >
+              Agregar
+            </button>
+  
+            <button type="button" mat-stroked-button color="warn" (click)="resetForm()">
+              Limpiar
+            </button>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="3" [rowspan]="2" *ngIf="esUpdate">
+            <button
+              type="submit"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+            >
+              Actualizar
+            </button>
+            <button
+            type="button"
+              class="width_input button_login"
+              [disabled]="form.invalid"
+              mat-raised-button
+              color="primary"
+              (click)="eliminarPoliza()"
+            >
+              Eliminar
+            </button>
+  
+            <button type="button" mat-stroked-button color="warn" (click)="resetForm()">
+              Limpiar
+            </button>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </form>
+    </div>
+  </div>
+  
+

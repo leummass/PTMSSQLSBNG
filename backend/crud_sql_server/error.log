@@ -530,3 +530,414 @@
 20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
 20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
 20:09:29.976 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=999, empleadogenero=1, sku=300, cantidad=30, fecha=2024-03-08)
+18:35:51.093 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:35:51.410 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:35:51.410 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:35:51.410 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:35:51.427 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:35:51.427 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:34.569 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=0, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:34.572 ERROR c.c.c.controller.PolizaController - Fecha del error: Mon Mar 11 18:36:34 GMT-07:00 2024
+18:36:34.572 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:36:34.572 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:36:34.572 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID, intente con uno diferente
+18:36:50.317 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:50.317 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:50.317 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:50.317 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:50.317 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:36:50.317 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:41:00.075 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=3, empleadogenero=1, sku=X345, cantidad=50, fecha=2024-03-03)
+18:41:00.075 ERROR c.c.c.controller.PolizaController - Fecha del error: Mon Mar 11 18:41:00 GMT-07:00 2024
+18:41:00.075 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+18:41:00.075 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+18:41:00.075 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+19:05:55.523 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para eliminar la poliza con ID: 0
+19:05:55.523 ERROR c.c.c.controller.PolizaController - Fecha del error: Mon Mar 11 19:05:55 GMT-07:00 2024
+19:05:55.523 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ELIMINAPOLIZA
+19:05:55.524 ERROR c.c.c.controller.PolizaController - Método ejecutado: eliminarPoliza
+19:05:55.524 ERROR c.c.c.controller.PolizaController - Mensaje del error: Error inesperado: Conversion failed when converting the varchar value 'X345' to data type int.
+19:07:15.018 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para eliminar la poliza con ID: 1
+19:07:15.018 ERROR c.c.c.controller.PolizaController - Fecha del error: Mon Mar 11 19:07:15 GMT-07:00 2024
+19:07:15.018 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ELIMINAPOLIZA
+19:07:15.018 ERROR c.c.c.controller.PolizaController - Método ejecutado: eliminarPoliza
+19:07:15.018 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se encontró ningún registro para eliminar
+21:13:58.538 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idEmpleado=0, nombre=alfrredo, apellido=rivas, puesto=lider)
+21:13:58.542 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Mon Mar 11 21:13:58 GMT-07:00 2024
+21:13:58.542 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+21:13:58.543 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+21:13:58.543 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+21:21:54.667 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=0, nombre=asd, apellido=asd, puesto=asd)
+21:21:54.671 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Mon Mar 11 21:21:54 GMT-07:00 2024
+21:21:54.671 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+21:21:54.671 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+21:21:54.671 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+21:22:21.087 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=0, nombre=fdg, apellido=dfg, puesto=dfg)
+21:22:21.087 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Mon Mar 11 21:22:21 GMT-07:00 2024
+21:22:21.087 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+21:22:21.087 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+21:22:21.087 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+21:29:10.957 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=1, nombre=1, apellido=1, puesto=1)
+21:29:10.957 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Mon Mar 11 21:29:10 GMT-07:00 2024
+21:29:10.957 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+21:29:10.957 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+21:29:10.957 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+22:07:20.886 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=0, nombre=null, apellido=null, puesto=null)
+22:07:20.890 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Mon Mar 11 22:07:20 GMT-07:00 2024
+22:07:20.890 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+22:07:20.890 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+22:07:20.890 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Error inesperado: Cannot insert the value NULL into column 'Nombre', table 'EvaluacionTecnicaSV.dbo.Empleado'; column does not allow nulls. INSERT fails.
+00:43:28.584 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=0, nombre=42, apellido=34, puesto=234)
+00:43:28.585 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 00:43:28 GMT-07:00 2024
+00:43:28.585 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+00:43:28.585 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+00:43:28.585 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+01:43:56.278 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=2, nombre=Arturo, apellido=Rojas, puesto=Tester)
+01:43:56.281 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:43:56 GMT-07:00 2024
+01:43:56.281 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:43:56.281 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:43:56.281 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:44:54.756 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=3, nombre=4, apellido=45, puesto=45)
+01:44:54.756 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:44:54 GMT-07:00 2024
+01:44:54.756 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:44:54.756 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:44:54.756 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:45:11.609 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=3, nombre=4, apellido=45, puesto=6666)
+01:45:11.609 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:45:11 GMT-07:00 2024
+01:45:11.609 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:45:11.609 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:45:11.609 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:45:28.743 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=4, nombre=Arturo, apellido=Rojas, puesto=Tester)
+01:45:28.743 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:45:28 GMT-07:00 2024
+01:45:28.743 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:45:28.743 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:45:28.743 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:46:51.063 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=34, nombre=dfs, apellido=sdf, puesto=dsf)
+01:46:51.063 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:46:51 GMT-07:00 2024
+01:46:51.063 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:46:51.063 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:46:51.063 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:47:00.531 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=35, nombre=mgstrd, apellido=mgstrd, puesto=mgstrd)
+01:47:00.531 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:00 GMT-07:00 2024
+01:47:00.531 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:47:00.531 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:47:00.531 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:47:06.429 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=155, nombre=1, apellido=1, puesto=1)
+01:47:06.429 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:06 GMT-07:00 2024
+01:47:06.429 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:47:06.429 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:47:06.429 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:47:18.959 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 155
+01:47:18.959 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:18 GMT-07:00 2024
+01:47:18.959 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+01:47:18.959 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+01:47:18.959 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún registro para eliminar
+01:47:18.960 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=155, nombre=1, apellido=1, puesto=1)
+01:47:18.960 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:18 GMT-07:00 2024
+01:47:18.960 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:47:18.960 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:47:18.960 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:47:31.992 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=551, nombre=sd, apellido=sad, puesto=asd)
+01:47:31.992 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:31 GMT-07:00 2024
+01:47:31.992 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:47:31.992 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:47:31.992 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:47:47.240 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 551
+01:47:47.241 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:47 GMT-07:00 2024
+01:47:47.241 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+01:47:47.241 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+01:47:47.241 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún registro para eliminar
+01:47:47.242 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=551, nombre=sd, apellido=sad, puesto=asd)
+01:47:47.242 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:47:47 GMT-07:00 2024
+01:47:47.242 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:47:47.242 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:47:47.242 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:48:45.522 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=555, nombre=Antonio, apellido=Aguilar, puesto=conserje)
+01:48:45.523 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:48:45 GMT-07:00 2024
+01:48:45.523 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:48:45.523 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:48:45.523 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:48:51.113 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=666, nombre=fdg, apellido=dfg, puesto=dfg)
+01:48:51.113 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:48:51 GMT-07:00 2024
+01:48:51.113 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:48:51.113 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:48:51.113 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:49:04.775 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=777, nombre=v, apellido=v2, puesto=v)
+01:49:04.775 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:49:04 GMT-07:00 2024
+01:49:04.775 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:49:04.775 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:49:04.775 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:49:16.665 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=2354, nombre=dfgdfg, apellido=dfg, puesto=dfg)
+01:49:16.665 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:49:16 GMT-07:00 2024
+01:49:16.665 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:49:16.665 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:49:16.665 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:50:02.881 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=78678678, nombre=dsf, apellido=sdf, puesto=sdf)
+01:50:02.881 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:50:02 GMT-07:00 2024
+01:50:02.881 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:50:02.881 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:50:02.881 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:50:37.424 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=134134134, nombre=4353, apellido=354345, puesto=345345)
+01:50:37.424 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:50:37 GMT-07:00 2024
+01:50:37.424 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:50:37.424 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:50:37.424 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:50:40.797 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=5675675, nombre=sdf, apellido=sdf, puesto=sdf)
+01:50:40.797 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:50:40 GMT-07:00 2024
+01:50:40.797 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:50:40.797 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:50:40.797 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:50:43.326 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=657567567, nombre=sdf, apellido=sdf, puesto=sdf)
+01:50:43.327 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:50:43 GMT-07:00 2024
+01:50:43.327 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:50:43.327 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:50:43.327 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:51:41.811 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=15, nombre=francisco, apellido=rivas, puesto=programador)
+01:51:41.811 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:51:41 GMT-07:00 2024
+01:51:41.811 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:51:41.811 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:51:41.811 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:52:15.872 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=1, nombre=123, apellido=123, puesto=123)
+01:52:15.872 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:52:15 GMT-07:00 2024
+01:52:15.872 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:52:15.872 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:52:15.872 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:53:21.419 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=15, nombre=555, apellido=55, puesto=55)
+01:53:21.419 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:53:21 GMT-07:00 2024
+01:53:21.419 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:53:21.419 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:53:21.419 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:55:12.645 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=123, nombre=345, apellido=345, puesto=23)
+01:55:12.645 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:55:12 GMT-07:00 2024
+01:55:12.645 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:55:12.645 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:55:12.645 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:55:31.427 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=123, nombre=123, apellido=123, puesto=123)
+01:55:31.427 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:55:31 GMT-07:00 2024
+01:55:31.427 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:55:31.427 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:55:31.427 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:55:34.697 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=456, nombre=456, apellido=456, puesto=456)
+01:55:34.697 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:55:34 GMT-07:00 2024
+01:55:34.697 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:55:34.697 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:55:34.697 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:55:50.284 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=15, nombre=15, apellido=5, puesto=15)
+01:55:50.284 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:55:50 GMT-07:00 2024
+01:55:50.284 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:55:50.284 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:55:50.284 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:57:43.354 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=16, nombre=16, apellido=16, puesto=6)
+01:57:43.354 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:57:43 GMT-07:00 2024
+01:57:43.354 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ANADIREMPLEADO
+01:57:43.354 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: anadirEmpleado
+01:57:43.354 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: Ya hay un empleado con el mismo ID, intente con uno diferente
+01:57:49.304 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=15, nombre=15, apellido=15, puesto=15)
+01:57:49.304 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:57:49 GMT-07:00 2024
+01:57:49.304 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:57:49.304 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:57:49.304 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:58:00.513 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=16, nombre=16, apellido=16, puesto=16)
+01:58:00.513 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:58:00 GMT-07:00 2024
+01:58:00.513 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:58:00.513 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:58:00.513 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+01:58:38.036 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para el empleado: Empleado(idempleado=15, nombre=15, apellido=5, puesto=5)
+01:58:38.036 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 01:58:38 GMT-07:00 2024
+01:58:38.036 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAEMPLEADO
+01:58:38.036 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: actualizarEmpleado
+01:58:38.036 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: No se encontró ningún empleado para actualizar.
+03:59:25.803 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=300, nombre=pantalones5, cantidad=100)
+03:59:25.804 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 03:59:25 GMT-07:00 2024
+03:59:25.804 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+03:59:25.804 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+03:59:25.804 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+03:59:34.320 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=300, nombre=pantalones5, cantidad=100)
+03:59:34.320 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 03:59:34 GMT-07:00 2024
+03:59:34.320 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+03:59:34.320 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+03:59:34.320 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+03:59:34.322 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 300
+03:59:34.322 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 03:59:34 GMT-07:00 2024
+03:59:34.322 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+03:59:34.322 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+03:59:34.322 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para eliminar
+04:00:31.504 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=300, nombre=XD4, cantidad=2)
+04:00:31.504 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:00:31 GMT-07:00 2024
+04:00:31.504 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+04:00:31.504 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+04:00:31.504 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+04:00:50.450 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=300, nombre=XD4, cantidad=2)
+04:00:50.450 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:00:50 GMT-07:00 2024
+04:00:50.450 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+04:00:50.450 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+04:00:50.450 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+04:02:32.196 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=300, nombre=xd, cantidad=577)
+04:02:32.196 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:02:32 GMT-07:00 2024
+04:02:32.196 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+04:02:32.196 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+04:02:32.196 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+04:04:23.014 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=300, nombre=dfdf, cantidad=33)
+04:04:23.014 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:04:23 GMT-07:00 2024
+04:04:23.014 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+04:04:23.014 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+04:04:23.014 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+04:05:41.349 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=55, nombre=55, cantidad=55)
+04:05:41.349 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:05:41 GMT-07:00 2024
+04:05:41.349 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+04:05:41.349 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+04:05:41.349 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+04:06:40.995 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para el inventario: Inventario(sku=555, nombre=5555, cantidad=5555)
+04:06:40.995 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:06:40 GMT-07:00 2024
+04:06:40.995 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAINVENTARIO
+04:06:40.995 ERROR c.c.c.c.InventarioController - Método ejecutado: actualizarInventario
+04:06:40.995 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para actualizar.
+04:08:20.200 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 5342345
+04:08:20.200 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 04:08:20 GMT-07:00 2024
+04:08:20.200 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+04:08:20.200 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+04:08:20.200 ERROR c.c.c.c.InventarioController - Mensaje del error: No se encontró ningún articulo para eliminar
+05:35:51.440 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-12T07:00:00.000Z)
+05:35:51.442 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-12T07:00:00.000Z)
+05:35:51.442 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-12T07:00:00.000Z)
+05:35:51.442 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-12T07:00:00.000Z)
+05:35:51.442 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-12T07:00:00.000Z)
+05:35:51.442 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-12T07:00:00.000Z)
+05:41:39.843 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=6, fecha=2024-03-11T07:00:00.000Z)
+05:41:39.843 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 05:41:39 GMT-07:00 2024
+05:41:39.843 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+05:41:39.843 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+05:41:39.843 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+05:41:44.071 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-11T07:00:00.000Z)
+05:41:44.071 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-11T07:00:00.000Z)
+05:41:44.071 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-11T07:00:00.000Z)
+05:41:44.071 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-11T07:00:00.000Z)
+05:41:44.071 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-11T07:00:00.000Z)
+05:41:44.071 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-11T07:00:00.000Z)
+05:41:59.972 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=2, empleadogenero=1, sku=1, cantidad=5, fecha=2024-03-11T07:00:00.000Z)
+05:41:59.972 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 05:41:59 GMT-07:00 2024
+05:41:59.972 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+05:41:59.972 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+05:41:59.972 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+05:52:13.890 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 1
+05:52:13.890 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 05:52:13 GMT-07:00 2024
+05:52:13.890 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+05:52:13.890 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+05:52:13.890 ERROR c.c.c.c.InventarioController - Mensaje del error: El articulo está siendo referenciado por otra tabla
+05:55:07.614 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 1
+05:55:07.614 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 05:55:07 GMT-07:00 2024
+05:55:07.614 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+05:55:07.614 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+05:55:07.614 ERROR c.c.c.c.InventarioController - Mensaje del error: El articulo está siendo referenciado por otra tabla
+05:55:14.946 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 1
+05:55:14.947 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 05:55:14 GMT-07:00 2024
+05:55:14.947 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+05:55:14.947 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+05:55:14.947 ERROR c.c.c.c.InventarioController - Mensaje del error: El articulo está siendo referenciado por otra tabla
+05:56:03.126 ERROR c.c.c.c.InventarioController - Error al ejecutar el procedimiento para eliminar el articulo con SKU: 1
+05:56:03.126 ERROR c.c.c.c.InventarioController - Fecha del error: Tue Mar 12 05:56:03 GMT-07:00 2024
+05:56:03.126 ERROR c.c.c.c.InventarioController - Procedimiento ejecutado en base de datos: SP_ELIMINARARTICULO
+05:56:03.126 ERROR c.c.c.c.InventarioController - Método ejecutado: eliminarArticulo
+05:56:03.127 ERROR c.c.c.c.InventarioController - Mensaje del error: El articulo está siendo referenciado por otra tabla
+06:40:13.740 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=666, fecha=2024-03-11)
+06:40:13.744 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 06:40:13 GMT-07:00 2024
+06:40:13.744 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ACTUALIZAPOLIZA
+06:40:13.744 ERROR c.c.c.controller.PolizaController - Método ejecutado: actualizarPoliza
+06:40:13.744 ERROR c.c.c.controller.PolizaController - Mensaje del error: No se pudo actualizar la poliza ya que no hay cantidad suficiente en inventario
+07:06:42.114 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:06:42.114 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:06:42 GMT-07:00 2024
+07:06:42.114 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:06:42.114 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:06:42.114 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:06:57.281 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:06:57.281 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:06:57 GMT-07:00 2024
+07:06:57.281 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:06:57.281 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:06:57.281 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:08:04.145 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:08:04.145 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:08:04 GMT-07:00 2024
+07:08:04.145 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:08:04.145 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:08:04.145 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:08:53.649 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:08:53.649 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:08:53 GMT-07:00 2024
+07:08:53.649 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:08:53.649 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:08:53.649 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:11:08.978 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:11:08.979 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:11:08 GMT-07:00 2024
+07:11:08.979 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:11:08.979 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:11:08.979 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:11:15.139 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:11:15.139 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:11:15 GMT-07:00 2024
+07:11:15.139 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:11:15.139 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:11:15.139 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:11:51.227 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:11:51.227 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:11:51 GMT-07:00 2024
+07:11:51.227 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:11:51.227 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:11:51.227 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:14:47.329 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:14:47.330 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:14:47 GMT-07:00 2024
+07:14:47.330 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:14:47.330 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:14:47.330 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+07:17:32.197 ERROR c.c.c.controller.EmpleadoController - Error al ejecutar el procedimiento para eliminar el empleado con ID: 1
+07:17:32.197 ERROR c.c.c.controller.EmpleadoController - Fecha del error: Tue Mar 12 07:17:32 GMT-07:00 2024
+07:17:32.197 ERROR c.c.c.controller.EmpleadoController - Procedimiento ejecutado en base de datos: SP_ELIMINAREMPLEADO
+07:17:32.197 ERROR c.c.c.controller.EmpleadoController - Método ejecutado: eliminarEmpleado
+07:17:32.197 ERROR c.c.c.controller.EmpleadoController - Mensaje del error: El registro está siendo referenciado por otra tabla
+08:00:49.144 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=6, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-19T07:00:00.000Z)
+08:00:49.145 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=6, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-19T07:00:00.000Z)
+08:00:49.145 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=6, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-19T07:00:00.000Z)
+08:00:49.145 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=6, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-19T07:00:00.000Z)
+08:00:49.145 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=6, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-19T07:00:00.000Z)
+08:00:49.145 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=6, empleadogenero=1, sku=1, cantidad=3, fecha=2024-03-19T07:00:00.000Z)
+08:04:26.261 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=55, empleadogenero=55, sku=123, cantidad=1, fecha=2024-03-10T07:00:00.000Z)
+08:04:26.263 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:04:26 GMT-07:00 2024
+08:04:26.263 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:04:26.263 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:04:26.263 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+08:04:37.200 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=55, empleadogenero=55, sku=1, cantidad=1, fecha=2024-03-10T07:00:00.000Z)
+08:04:37.200 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:04:37 GMT-07:00 2024
+08:04:37.200 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:04:37.200 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:04:37.200 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+08:05:07.465 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=123, cantidad=6666, fecha=2024-03-19T07:00:00.000Z)
+08:05:07.465 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:05:07 GMT-07:00 2024
+08:05:07.465 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:05:07.465 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:05:07.465 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+08:05:14.018 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=123, cantidad=6666, fecha=2024-03-19T07:00:00.000Z)
+08:05:14.018 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:05:14 GMT-07:00 2024
+08:05:14.018 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:05:14.018 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:05:14.018 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+08:10:19.294 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=123, cantidad=6666, fecha=2024-03-19T07:00:00.000Z)
+08:10:19.294 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:10:19 GMT-07:00 2024
+08:10:19.294 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:10:19.294 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:10:19.294 ERROR c.c.c.controller.PolizaController - Mensaje del error: No existe articulo con ID 123
+08:10:25.079 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=6666, fecha=2024-03-19T07:00:00.000Z)
+08:10:25.079 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:10:25 GMT-07:00 2024
+08:10:25.079 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:10:25.079 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:10:25.079 ERROR c.c.c.controller.PolizaController - Mensaje del error: No hay cantidad suficiente en el inventario
+08:10:30.016 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=666, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:30.016 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:10:30 GMT-07:00 2024
+08:10:30.016 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:10:30.016 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:10:30.016 ERROR c.c.c.controller.PolizaController - Mensaje del error: Una llave externa no existe
+08:10:33.786 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:33.786 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:33.786 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:33.786 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:33.786 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:33.786 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=65, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-19T07:00:00.000Z)
+08:10:58.882 ERROR c.c.c.controller.PolizaController - Error al ejecutar el procedimiento para la poliza: Poliza(idpolizas=1, empleadogenero=1, sku=1, cantidad=1, fecha=2024-03-18T07:00:00.000Z)
+08:10:58.882 ERROR c.c.c.controller.PolizaController - Fecha del error: Tue Mar 12 08:10:58 GMT-07:00 2024
+08:10:58.882 ERROR c.c.c.controller.PolizaController - Procedimiento ejecutado en base de datos: SP_ANADIRPOLIZA
+08:10:58.882 ERROR c.c.c.controller.PolizaController - Método ejecutado: anadirPoliza
+08:10:58.882 ERROR c.c.c.controller.PolizaController - Mensaje del error: Ya hay una poliza con el mismo ID 1, intente con uno diferente

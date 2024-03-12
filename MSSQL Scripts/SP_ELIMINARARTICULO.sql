@@ -13,12 +13,12 @@ BEGIN
 		IF @@ROWCOUNT > 0
 		BEGIN
 			SET @Resultado = 1;
-			SET @Mensaje = 'Se eliminó al articulo correctamente';
+			SET @Mensaje = 'Se eliminó correctamente el articulo con SKU '+@SKU;
 		END
 		ELSE
 		BEGIN
 			SET @Resultado = 0;
-			SET @Mensaje = 'No se encontró ningún articulo para eliminar';
+			SET @Mensaje = 'No se encontró ningún articulo para eliminar con SKU '+@SKU;
 		END
 		COMMIT TRANSACTION;
 

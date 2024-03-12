@@ -10,6 +10,12 @@ import { CatInventarioComponent } from './inventario/cat-inventario/cat-inventar
 import { CatPolizaComponent } from './poliza/cat-poliza/cat-poliza.component';
 import { SharedModule } from '../../shared/shared.module';
 import { InicioRoutingModule } from './inicio-routing.module';
+import { FormularioEmpleadoComponent } from './empleado/formulario-empleado/formulario-empleado.component';
+import { VentanaEditarEmpleadoComponent } from './empleado/ventana-editar-empleado/ventana-editar-empleado.component';
+import { FormularioInventarioComponent } from './inventario/formulario-inventario/formulario-inventario.component';
+import { VentanaEditarInventarioComponent } from './inventario/ventana-editar-inventario/ventana-editar-inventario.component';
+import { VentanaEditarPolizaComponent } from './poliza/ventana-editar-poliza/ventana-editar-poliza.component';
+import { FormularioPolizaComponent } from './poliza/formulario-poliza/formulario-poliza.component';
 
 
 
@@ -23,7 +29,13 @@ import { InicioRoutingModule } from './inicio-routing.module';
     BuscarInventarioComponent,
     CatEmpleadoComponent,
     CatInventarioComponent,
-    CatPolizaComponent
+    CatPolizaComponent,
+    FormularioEmpleadoComponent,
+    VentanaEditarEmpleadoComponent,
+    FormularioInventarioComponent,
+    VentanaEditarInventarioComponent,
+    VentanaEditarPolizaComponent,
+    FormularioPolizaComponent
   ],
   imports: [
     CommonModule,

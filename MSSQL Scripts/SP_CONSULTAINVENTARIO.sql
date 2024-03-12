@@ -1,5 +1,5 @@
 CREATE PROC SP_CONSULTAINVENTARIO
 AS
 BEGIN
-	SELECT SKU, Nombre, Cantidad FROM Inventario;
+	SELECT SKU AS sku, Nombre AS nombre, Cantidad AS cantidad FROM Inventario;
 END

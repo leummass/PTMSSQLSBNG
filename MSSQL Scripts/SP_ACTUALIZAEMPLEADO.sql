@@ -27,7 +27,7 @@ BEGIN
         BEGIN
 
             SET @Resultado = 0;
-            SET @Mensaje = 'No se encontró ningún empleado para actualizar.';
+            SET @Mensaje = 'No se encontró ningún empleado para actualizar con ID '+CAST(@IdEmpleado AS VARCHAR(10));
 
         END
         
